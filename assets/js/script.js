@@ -6,6 +6,7 @@ document.getElementById("lizardButton").addEventListener("click", playGame);
 document.getElementById("spockButton").addEventListener("click", playGame);
 
 
+
 function playGame(gameType) {
     if (this.getAttribute("data-type") === "spock") {
         console.log("Spocky Spock Spock");
@@ -18,8 +19,14 @@ function playGame(gameType) {
         console.log("stabby twins");
     } else if (this.getAttribute("data-type") === "lizard")
         console.log("maybe a gecko");
+    const compChoices = ["Rock", "paper", "Scissors", "Spock", "Lizard"];
+
+    const random = Math.floor(Math.random() * compChoices.length);
+    console.log(random, compChoices[random]);
 
 }
+
+
 
 
 
