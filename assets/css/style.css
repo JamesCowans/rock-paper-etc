@@ -9,7 +9,7 @@ body {
     background-color: white;
     border-radius: 12px;
     border-style: ridge;
-    width: 800px;
+    width: 650px;
     max-height: 80%;
     box-shadow: 0 0 5px 4px;
 
@@ -31,4 +31,12 @@ body {
     border-color: white;
     background-color: lightsteelblue;
 
+}
+
+.btn--reset {
+    font-size: small;
+}
+
+.hide {
+    display: none;
 }
