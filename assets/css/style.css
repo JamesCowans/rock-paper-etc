@@ -37,6 +37,10 @@ body {
     font-size: small;
 }
 
+#result {
+    padding: 20%;
+}
+
 .hide {
     display: none;
 }

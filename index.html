@@ -20,7 +20,7 @@
     <h1 class="heading">
         
     <div class="game-area">
-        <div class="controls-area">
+        <div class="controls-area" id="userOptions">
             <h1>Choose Your Weapon!!</h1>
             <button data-type="rock" id="rocksButton" class="btn btn--big btn--rock">
                 <i class="fa-solid fa-hand-back-fist"></i>
@@ -47,44 +47,22 @@
                 <p>Spock</p>
             </button>
         </div>
-    <div class="answers" >
-        <p>Computer Answer</p>
-    <button data-type="rock" id="compRocksButton" class="btn btn--big btn--rock">
-        <i class="fa-solid fa-hand-back-fist"></i>
-        <p>Rock</p>
-    </button>
-    
-    <button data-type="paper" id="compPaperButton" class="btn btn--big btn--paper">
-        <i class="fa-solid fa-hand"></i>
-        <p>Paper</p>
-    </button>
-    
-    <button data-type="scissors" id="compScissorsButton" class="btn btn--big btn--scissor">
-        <i class="fa-solid fa-hand-scissors"></i>
-        <p>Scissors</p>
-    </button>
-    
-    <button data-type="lizard" id="compLizardButton" class="btn btn--big btn--lizard">
-        <i class="fa-solid fa-hand-lizard"></i>
-        <p>Lizard</p>
-    </button>
-    
-    <button data-type="spock" id="compSpockButton" class="btn btn--big btn--spock">
-        <i class="fa-solid fa-hand-spock"></i>
-        <p>Spock</p>
-    </button>
-    <div id="result">Result</div>
-        
-       
-        
-    </div>
+  
+    <div id="result">Computer Chooses:</div>
+    <div>
         <button data-type="reset-game" class="btn btn--reset">
-        <i class="fa-solid fa-power-off"></i>
-        <p>Reset Game</p>
+            <i class="fa-solid fa-power-off"></i>
+            <p>Reset Game</p>
         </button>
         <div class="scores"></div>
         <p class="scores">Player <span id="player">0</span></p>
         <p class="scores">Game <span id="game">0</span></p>
+    </div>
+        
+       
+        
+    </div>
+    
         <script src="assets/js/script.js"></script>
 </body>
 

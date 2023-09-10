@@ -9,22 +9,38 @@ document.getElementById("spockButton").addEventListener("click", playGame);
 
 function playGame(gameType) {
     if (this.getAttribute("data-type") === "spock") {
-        console.log("Spocky Spock Spock");
+        var userC = ("spock");
 
     } else if (this.getAttribute("data-type") === "paper") {
-        console.log("flat Tree Stuff");
+        var userC = ("paper");
     } else if (this.getAttribute("data-type") === "rock") {
-        console.log("keeps a rolling");
+        var userC = ("rock");
     } else if (this.getAttribute("data-type") === "scissors") {
-        console.log("stabby twins");
+        var userC = ("scissors");
     } else if (this.getAttribute("data-type") === "lizard")
-        console.log("maybe a gecko");
-    const compChoices = ["Rock", "paper", "Scissors", "Spock", "Lizard"];
+        var userC = ("lizard");
 
-    const random = Math.floor(Math.random() * compChoices.length);
-    console.log(random, compChoices[random]);
 
+
+    const compChoices = ["Rock", "paper", "Scissors", "Spock", "Lizard"]; {
+        random = Math.floor(Math.random() * compChoices.length);
+        var userD = (random, compChoices[random])
+    };
+
+    if (userC === userD) {
+        console.log("draw")
+    } else console.log("not a draw");
+    console.log(userC);
+    console.log(userD);
+    document.getElementById("result").innerHTML = "Computer Chooses: " + userD.toString();
 }
+
+
+
+
+
+
+
 
 
 
