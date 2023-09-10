@@ -22,34 +22,37 @@ function playGame(gameType) {
 
 
 
-    const compChoices = ["Rock", "paper", "Scissors", "Spock", "Lizard"]; {
+    const compChoices = ["rock", "paper", "scissors", "spock", "lizard"]; {
         random = Math.floor(Math.random() * compChoices.length);
         var userD = (random, compChoices[random])
-        if ((userC == 'rock' && userD == 'Scissors') || (userC == 'rock' && userD == 'Lizard')) {
+
+
+        if ((userC == 'rock' && userD == 'scissors') || (userC == 'rock' && userD == 'lizard')) {
             console.log("You Win!!");
-        } else if ((userC == 'paper' && userD == 'Rock') || (userC == 'paper' && userD == 'Spock')) {
+        } else if ((userC == 'paper' && userD == 'rock') || (userC == 'paper' && userD == 'spock')) {
             console.log("You Win!!");
         } else if ((userC == 'scissors' && userD == 'paper') || (userC == 'scissors' && userD == 'lizard')) {
             console.log("You Win!!");
-        } else if ((userC == 'lizard' && userD == 'Spock') || (userC == 'lizard' && userD == 'Paper')) {
+        } else if ((userC == 'lizard' && userD == 'spock') || (userC == 'lizard' && userD == 'paper')) {
             console.log("You Win!!");
-        } else if ((userC == 'spock' && userD == 'Scissors') || (userC == 'spock' && userD == 'Rock')) {
+        } else if ((userC == 'spock' && userD == 'scissors') || (userC == 'spock' && userD == 'rock')) {
             console.log("You Win!!");
-        } else if (userC === userD) {
-            console.log("It's a draw!!");
+        } else if (userC == userD) {
+            console.log("Its a Draw");
+        } else console.log("You loose");
 
-        } else console.log("You Loose!!");
-
-
-
+    }
 
 
 
 
 
 
-        console.log(userC);
-        console.log(userD);
-        document.getElementById("result").innerHTML = "Computer Chooses: " + userD.toString()
-    };
-}
+
+
+    console.log(userC);
+    console.log(userD);
+    document.getElementById("result").innerHTML = "Computer Chooses: " + userD.toString()
+
+};
+

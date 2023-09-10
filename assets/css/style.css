@@ -44,3 +44,9 @@ body {
 .hide {
     display: none;
 }
+
+#winner-loser {
+    height: 50px;
+    width: 200px;
+    text-align: center;
+}

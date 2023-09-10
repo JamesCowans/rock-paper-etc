@@ -1,70 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <script
+        src="https://kit.fontawesome.com/d6b1861be4.js"
+        crossorigin="anonymous"
+      ></script>
+      <title>Document</title>
+    </head>
+    <body></body>
+  </html>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/css/style.css" />
-<script src="https://kit.fontawesome.com/d6b1861be4.js" crossorigin="anonymous"></script>
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
-
-<body>
-    <h1 class="heading">
-        
+  <body>
     <div class="game-area">
-        <div class="controls-area" id="userOptions">
-            <h1>Choose Your Weapon!!</h1>
-            <button data-type="rock" id="rocksButton" class="btn btn--big btn--rock">
-                <i class="fa-solid fa-hand-back-fist"></i>
-                <p>Rock</p>
-            </button>
+      <div class="controls-area" id="userOptions">
+        <h1>Choose Your Weapon!!</h1>
+        <button
+          data-type="rock"
+          id="rocksButton"
+          class="btn btn--big btn--rock"
+        >
+          <i class="fa-solid fa-hand-back-fist"></i>
+          <p>Rock</p>
+        </button>
 
-            <button data-type="paper" id="paperButton" class="btn btn--big btn--paper">
-                <i class="fa-solid fa-hand"></i>
-                <p>Paper</p>
-            </button>
+        <button
+          data-type="paper"
+          id="paperButton"
+          class="btn btn--big btn--paper"
+        >
+          <i class="fa-solid fa-hand"></i>
+          <p>Paper</p>
+        </button>
 
-            <button data-type="scissors" id="scissorsButton" class="btn btn--big btn--scissor">
-                <i class="fa-solid fa-hand-scissors"></i>
-                <p>Scissors</p>
-            </button>
+        <button
+          data-type="scissors"
+          id="scissorsButton"
+          class="btn btn--big btn--scissor"
+        >
+          <i class="fa-solid fa-hand-scissors"></i>
+          <p>Scissors</p>
+        </button>
 
-            <button data-type="lizard" id="lizardButton"class="btn btn--big btn--lizard">
-                <i class="fa-solid fa-hand-lizard"></i>
-                <p>Lizard</p>
-            </button>
+        <button
+          data-type="lizard"
+          id="lizardButton"
+          class="btn btn--big btn--lizard"
+        >
+          <i class="fa-solid fa-hand-lizard"></i>
+          <p>Lizard</p>
+        </button>
 
-            <button data-type="spock" id="spockButton" class="btn btn--big btn--spock">
-                <i class="fa-solid fa-hand-spock"></i>
-                <p>Spock</p>
-            </button>
-        </div>
-  
-    <div id="result">Computer Chooses:</div>
-    <div id="winner-loser"></div>
-    <div>
+        <button
+          data-type="spock"
+          id="spockButton"
+          class="btn btn--big btn--spock"
+        >
+          <i class="fa-solid fa-hand-spock"></i>
+          <p>Spock</p>
+        </button>
+      </div>
+
+      <div id="result">
+        Computer Chooses:
+        <div id="winner-loser">The Result is:</div>
+      </div>
+
+      <div>
         <button data-type="reset-game" class="btn btn--reset">
-            <i class="fa-solid fa-power-off"></i>
-            <p>Reset Game</p>
+          <i class="fa-solid fa-power-off"></i>
+          <p>Reset Game</p>
         </button>
         <div class="scores"></div>
         <p class="scores">Player <span id="player">0</span></p>
         <p class="scores">Game <span id="game">0</span></p>
+      </div>
     </div>
-        
-       
-        
-    </div>
-    
-        <script src="assets/js/script.js"></script>
-</body>
 
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
